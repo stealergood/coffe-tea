@@ -1,0 +1,191 @@
+body{
+    background-image: url("img/langit.jpg");
+    background-size: cover;
+    padding: 0px;
+}
+
+.nakal{
+    text-align: center;
+}
+/*card*/
+.card {
+    width: 320px;
+    height: 374px;
+    margin:  100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #F8FBFE;
+    border-radius: 8px;
+    z-index: 1;
+   }
+   
+   .tools {
+    display: flex;
+    align-items: center;
+    padding: 9px;
+   }
+   
+   .circle {
+    padding: 0 4px;
+   }
+   
+   .box {
+    display: inline-block;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    padding: 1px;
+    border-radius: 50%;
+   }
+   
+   .red {
+    background-color: #ff605c;
+   }
+   
+   .yellow {
+    background-color: #ffbd44;
+   }
+   
+   .green {
+    background-color: #00ca4e;
+   }
+
+    .judul{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: smaller;
+    text-align: center;
+    }
+
+/*Button*/
+button {
+        padding: 15px 25px;
+        border: unset;
+        border-radius: 15px;
+        color: #212121;
+        z-index: 1;
+        background: #fe6969;
+        position: relative;
+        margin-top: 200px;
+        margin-left: 35px;
+        font-weight: 1000;
+        font-size: 10px;
+        -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+        box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+        transition: all 250ms;
+        overflow: hidden;
+       }
+       
+       button::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 0;
+        border-radius: 15px;
+        background-color: #212121;
+        z-index: -1;
+        -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+        box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+        transition: all 250ms
+       }
+       
+       button:hover {
+        color: #e8e8e8;
+       }
+       
+       button:hover::before {
+        width: 100%;
+       }
+.cup{
+    height: 120px;
+    width: 140px;
+    border: 6px solid #010101;
+    margin:80px;
+    margin-left: 65px;
+    position: absolute;
+    border-radius: 0px 0px 70px 70px;
+    background: url("img/coffe.jpg");
+    box-shadow: 0px 0px 0px 6px white;
+    background-repeat: repeat-x;
+    background-position: 0px 140px;
+    animation: fill 5s infinite;
+}
+
+.handle{
+    height: 60px;
+    width: 50px;
+    background-color: transparent;
+    border: 6px solid #000000;
+    position: absolute;
+    margin-left: 140px;
+    margin-top: 0px;
+    border-radius: 0px 25px 80px 0px;
+}
+
+@keyframes fill{
+    0%{
+        background-position: 0px 140px;
+    }
+    20%
+    {
+        background-position: -450px 100px;
+    }
+    40%{
+        background-position: -900px 50px;
+    }
+    80%{
+        background-position: -1350px -40px;
+    }
+    100%{
+        background-position: 0px 140px;;
+    }
+}
+/*    
+.cup{
+        height: 120px;
+        width: 140px;
+        border: 6px solid #010101;
+        position: absolute;
+        margin: auto;
+        left: 548px;
+        right: auto;
+        bottom: 248px;
+        border-radius: 0px 0px 70px 70px;
+        background: url("img/coffe.jpg");
+        box-shadow: 0px 0px 0px 6px white;
+        background-repeat: repeat-x;
+        background-position: 0px 140px;
+        animation: fill 5s infinite;
+        z-index: 9999;
+    }
+    .handle{
+        height: 60px;
+        width: 50px;
+        background-color: transparent;
+        border: 6px solid #000000;
+        position: absolute;
+        left: 140px;
+        top: 0px;
+        border-radius: 0px 25px 80px 0px;
+    }
+
+    @keyframes fill{
+        0%{
+            background-position: 0px 140px;
+        }
+        20%
+        {
+            background-position: -450px 100px;
+        }
+        40%{
+            background-position: -900px 50px;
+        }
+        80%{
+            background-position: -1350px -40px;
+        }
+        100%{
+            background-position: 0px 140px;;
+        }
+    }
+*/
